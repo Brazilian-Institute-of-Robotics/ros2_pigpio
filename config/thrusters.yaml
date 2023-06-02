@@ -1,0 +1,18 @@
+thruster_fl:
+  ros__parameters:
+    pin: 16
+thruster_fr:
+  ros__parameters:
+    pin: 18
+thruster_rl:
+  ros__parameters:
+    pin: 20
+thruster_rr:
+  ros__parameters:
+    pin: 22
+thruster_ul:
+  ros__parameters:
+    pin: 24
+thruster_ur:
+  ros__parameters:
+    pin: 26
