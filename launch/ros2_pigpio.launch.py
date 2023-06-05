@@ -33,35 +33,35 @@ def generate_launch_description():
         Node(
             package='ros2_pigpio',
             executable='gpio_pwm_writer',
-            name='thuster_fr',
+            name='thruster_fr',
             parameters= [config],
             remappings = [('/gpio_pwm_{}'.format(thruster_fr_pin), '/thruster_fr')]
         ),
         Node(
             package='ros2_pigpio',
             executable='gpio_pwm_writer',
-            name='thuster_rl',
+            name='thruster_rl',
             parameters= [config],
             remappings = [('/gpio_pwm_{}'.format(thruster_rl_pin), '/thruster_rl')]
         ),
         Node(
             package='ros2_pigpio',
             executable='gpio_pwm_writer',
-            name='thuster_rr',
+            name='thruster_rr',
             parameters= [config],
             remappings = [('/gpio_pwm_{}'.format(thruster_rr_pin), '/thruster_rr')]
         ),
         Node(
             package='ros2_pigpio',
             executable='gpio_pwm_writer',
-            name='thuster_ul',
+            name='thruster_ul',
             parameters= [config],
             remappings = [('/gpio_pwm_{}'.format(thruster_ul_pin), '/thruster_ul')]
         ),
         Node(
             package='ros2_pigpio',
             executable='gpio_pwm_writer',
-            name='thuster_ur',
+            name='thruster_ur',
             parameters= [config],
             remappings = [('/gpio_pwm_{}'.format(thruster_ur_pin), '/thruster_ur')]
         )
