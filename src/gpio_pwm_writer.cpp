@@ -39,6 +39,8 @@ public:
     if (pi_ >= 0)
     {
       set_mode(pi_, pin_, PI_OUTPUT);
+      set_PWM_frequency(pi_, pin_, 50);
+      set_PWM_range(pi_, pin_, 4095);
       std::stringstream ss;
       ss << "gpio_pwm_" << std::setw(2) << pin_;
       subscription_ = this->create_subscription<std_msgs::msg::Int16>(
